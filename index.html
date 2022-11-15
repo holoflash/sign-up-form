@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <style>html{visibility: hidden;opacity:0;}</style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,42 +15,49 @@
 
 <body>
     <div class="content">
-        <form action="#">
-            <img class="globe-small" src="Assets/globe_logo.png" alt="globe_logo">
-            <div class="signUp">
-                <p class="headerText">Welcome. <br>
-                    Please sign up to initate<br>
-                    boarding procedure.</p>
+        <div class="left_side">
+            <img class="quadgalactic" src="Assets/QUADGALACTIC.png" alt="quadgalactic_header">
+        </div>
+        <img class="globe-big" src="Assets/globe.svg" alt="quadgalactic_globe">
+        <div class="right_side">
+            <form action="#">
+                <img class="globe-small" src="Assets/globe_logo.png" alt="quadgalactic_globe_logo">
+                <div class="signUp">
+                    <p class="headerText">Welcome. <br>
+                        Please sign up to initate<br>
+                        boarding procedure.</p>
                     <hr>
-                <div class="input">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" required placeholder="Name">
+                    <div class="input">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required placeholder="Name">
+                    </div>
+
+                    <div class="input">
+                        <label for="email">Planetary ID</label>
+                        <input type="email" name="email" id="email" required placeholder="planet@galaxy.earth">
+                    </div>
+
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="passwor" id="passwor" required
+                            placeholder="min.5 characters,1 digit,">
+                    </div>
+
+                    <div class="input">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required
+                            placeholder="repeat password">
+                    </div>
+                    <input type="checkbox" id="human" name="human" value="species">
+                    <label for="human"> I am human</label><br>
                 </div>
 
-                <div class="input">
-                    <label for="email">Planetary ID</label>
-                    <input type="email" name="email" id="email" required placeholder="planet@galaxy.earth">
-                </div>
-
-                <div class="input">
-                    <label for="password">Password</label>
-                    <input type="password" name="passwor" id="passwor" required placeholder="min.5 characters,1 digit,">
-                </div>
-
-                <div class="input">
-                    <label for="confirm-password">Confirm password</label>
-                    <input type="password" name="confirm-password" id="confirm-password" required placeholder="repeat password">
-                </div>
-                <input type="checkbox" id="human" name="human" value="species">
-                <label for="human"> I am human</label><br>
-
-            </div>
-
-            <div class="initiateButton"><button type="submit">Initiate</button></div>
-            <p class="terms">By submitting this form you automatically agree to all terms and conditions</p>
-        </form>
+                <div class="initiateButton"><button type="submit">Initiate</button></div>
+                <p class="terms">By submitting this form you automatically agree to all <a href="">terms and
+                        conditions</a>.</span></p>
+            </form>
+        </div>
     </div>
-
 </body>
 </body>
 
