@@ -94,9 +94,6 @@ button {
     border-radius: 5px;
     border: none;
     color: white;
-}
-
-.initiateButton {
     cursor: pointer;
     font-size: 20px;
 }
