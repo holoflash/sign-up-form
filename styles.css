@@ -15,12 +15,10 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: visible;
-    opacity: 1;
+    overflow: hidden;
 }
 
 .quadgalactic {
@@ -29,46 +27,39 @@ body {
     left: 50%;
     opacity: 1;
     transform: translateX(-50%);
-    transition: all 3s;
+    transition: all 1s;
     height: 20px;
 }
 
 .globe-big {
-    display: block;
-    position: absolute;
-    rotate: 225deg;
-    width: 1600px;
-    top: -100px;
-    left: -500px;
-    right: none;
-    opacity: 0;
-    filter: blur(10px);
-    transition: all 2s ease;
-    pointer-events:none
+    display: none;
 }
-
 
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-top: 1px solid var(--quadGray)
 }
 
 .headerText {
     text-align: center;
+    width: 70vw;
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+
+span {
     font-size: 25px;
 }
 
 .globe-small {
-    margin-top: 30px;
-    height: 120px;
+    height: 100px;
     rotate: 45deg;
 }
 
@@ -78,7 +69,11 @@ hr {
     flex-direction: column;
     width: 70vw;
     font-size: 15px;
-    opacity: 1;
+}
+
+input[type='checkbox'] {
+    cursor: pointer;
+    accent-color: var(--quadPurple);
 }
 
 input {
@@ -86,7 +81,10 @@ input {
     border-radius: 5px;
     border: solid var(--quadGray) 2px;
     color: black;
+}
 
+input:focus {
+    border: solid #8B9CD8 2px;
 }
 
 button {
@@ -99,17 +97,9 @@ button {
 }
 
 .initiateButton {
-    font-size: 30px;
+    cursor: pointer;
+    font-size: 20px;
 }
-
-.terms {
-    text-align: center;
-    margin-top: -10px;
-    font-size: 9px;
-    color: var(--quadGray);
-    width: 90vw;
-}
-
 
 @media only screen and (max-height: 844px) {
     .quadgalactic {
@@ -118,33 +108,33 @@ button {
 }
 
 @media only screen and (min-width: 900px) {
+    .headerText {
+        text-align: center;
+        width: auto;
+        font-size: 50px;
+        flex-wrap: wrap;
+    }
+
+    span {
+        font-size: 50px;
+    }
+
     .quadgalactic {
-        position: absolute;
-        top: 10px;
         left: 10px;
-        opacity: 1;
         transform: translateX(0%);
     }
 
     .globe-big {
-        display: block;
         position: absolute;
+        display: block;
         rotate: 45deg;
         width: 1600px;
         height: auto;
         top: -100px;
         left: -500px;
-        right: none;
         opacity: 0.1;
-        filter: blur(0px);
         transition: all 2s ease;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        pointer-events: none;
     }
 
     .right_side {
@@ -169,7 +159,6 @@ button {
         border-radius: 5px;
         border: solid var(--quadGray) 2px;
         color: black;
-
     }
 
     button {
